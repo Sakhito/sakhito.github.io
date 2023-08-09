@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="оценки фильмов, сериалов и игр"/>
+<title>Оценки фильмов, сериалов и игр1</title>
+<style type="text/css">
+body {font:12px Verdana, Arial; margin:25px; background-color:#1b2838; color:#acb2b8; text-align: center;}
+
+table a{text-decoration:none; color:#d4d4d4; font-weight:bold;}
+
+table {max-width:960px; border-left:1px solid #17354c; border-top:1px solid #17354c; border-bottom:none; margin:0 auto; background-color: #0d141c;}
+table th{background-color:#214b6b; text-align:left; color:#d4d4d4; border:1px solid #17354c; border-right:none; padding:10px; text-align:center; white-space:nowrap;}
+table td{border-bottom:1px solid #17354c; border-right:1px solid #17354c; padding:6px 4px;}
+table tr:nth-child(even) td{background-color:#16202d;}
+
+.desc,.asc,.sort{width:5px; height:8px; display:inline-block;background-repeat: no-repeat; padding:0px 5px 0 0;}
+	
+.desc{background-image:url(images/desc.gif)}
+.asc{background-image:url(images/asc.gif);}
+.sort{background-image:url(images/sort.gif);}
+
+#sub-desc{color:#384959; padding-top:10px;}
+
+.tabs {width: 100%; padding: 0px; margin: 30px auto 0 auto;}
+.tabs>input { display:none; }
+.tabs>div { display: none;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: #d4d4d4;
+    border: 1px solid #2b526d;
+    background-color: #376d91;
+    cursor: pointer;
+}
+.tabs>label:hover {
+    background-color: #4685af;
+}
+.tabs>input:checked + label {
+	color:#d4d4d4;
+	border:1px solid #17354c;
+	border-bottom:1px solid #17354c;
+	background-color: #2b5470;
+}
+
+#tab_1:checked ~ #content_1,
+#tab_2:checked ~ #content_2,
+#tab_3:checked ~ #content_3,
+#tab_4:checked ~ #content_4,
+#tab_5:checked ~ #content_5,
+#tab_6:checked ~ #content_6,
+#tab_7:checked ~ #content_7,
+#tab_8:checked ~ #content_8 {display: block;}
+</style>
+<script src="sorttable.js"></script>
+</head>
+<body>
+<div class="tabs">
+ 	<input type="radio" name="inset" value="" id="tab_1" checked>
+    <label for="tab_1">PC</label>
+	
+	<input type="radio" name="inset" value="" id="tab_2">
+    <label for="tab_2">PSP</label>
+	
+    <input type="radio" name="inset" value="" id="tab_3">
+    <label for="tab_3">PlayStation</label>
+
+    <input type="radio" name="inset" value="" id="tab_4">
+    <label for="tab_4">PlayStation 2</label>
+	
+	<input type="radio" name="inset" value="" id="tab_5">
+    <label for="tab_5">PlayStation 3</label>
+	
+	<input type="radio" name="inset" value="" id="tab_6">
+    <label for="tab_6">PlayStation 4</label>
+	
+	<input type="radio" name="inset" value="" id="tab_7">
+    <label for="tab_7">PlayStation 5</label>
+	
+	<input type="radio" name="inset" value="" id="tab_8">
+    <label for="tab_8">Книги</label>
+	
+    <div id="content_1"><!--PC игры-->
+		<h1>PC игры</h1>
+		<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+			<thead>
+				<tr>
+					<th><b>Название</b></th>
+					<th><b>Оценка</b></th>
+					<th><b>Статус</b></th>
+					<th><b>Пройдено раз</b></th>
+					<th class="nosort"><b>Дата прохождения</b></th>
+					<th class="nosort"><b>Комментарий</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Dead Island 2 (2023)</td>
+					<td>5</td>
+					<td>Пройдено</td>
+					<td>1</td>
+					<td>04.08.23</td>
+					<td>Большинство миссий тупая зачистка толп зомби, без баланса, наслаждаться чем-то невозможно. Локации красивые, но ограниченные. Машины порезали.</td>
+				</tr>
+			</tbody>
+		</table>
+    </div>
+	
+	
+	<div id="content_2"><!--PSP-->
+		<h1>PSP игры</h1>
+		<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+			<thead>
+				<tr>
+					<th><b>Название</b></th>
+					<th><b>Оценка</b></th>
+					<th><b>Статус</b></th>
+					<th><b>Пройдено раз</b></th>
+					<th class="nosort"><b>Дата прохождения</b></th>
+					<th class="nosort"><b>Комментарий</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Metal Slug 6 (2006)</td>
+					<td>7</td>
+					<td>Пройдено</td>
+					<td>1</td>
+					<td>09.05.19</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	
+	
+    </div>
+	
+    <div id="content_3"><!--PS1-->
+		<h1>PlayStation 1 игры</h1>
+		<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+			<thead>
+				<tr>
+					<th><b>Название</b></th>
+					<th><b>Оценка</b></th>
+					<th><b>Статус</b></th>
+					<th><b>Пройдено раз</b></th>
+					<th class="nosort"><b>Дата прохождения</b></th>
+					<th class="nosort"><b>Комментарий</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Spider-Man (2000)</td>
+					<td>7.5</td>
+					<td>Пройдено</td>
+					<td>4</td>
+					<td>21.02.22</td>
+					<td>Простой приятный экшен про человека-паука. Уникальный геймплей.</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="sub-desc">* Пройдены на эмуляторе ePSXe, с горячими сохраненями или на PSP.</div>
+	   
+    </div>
+    <div id="content_4"><!--PS2-->
+		<h1>PlayStation 2 игры</h1>
+	   	<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+			<thead>
+				<tr>
+					<th><b>Название</b></th>
+					<th><b>Оценка</b></th>
+					<th><b>Статус</b></th>
+					<th><b>Пройдено раз</b></th>
+					<th class="nosort"><b>Дата прохождения</b></th>
+					<th class="nosort"><b>Комментарий</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Resident Evil Code: Veronica (2002)</td>
+					<td>7</td>
+					<td>Пройдено</td>
+					<td>1</td>
+					<td>11.05.18</td>
+					<td>Классический Resident Evil, в стиле первых трех частей. Местами интересный.</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="sub-desc">* Пройдены на эмуляторе PCSX2, с горячими сохраненями.</div>
+	
+	</div>
+	
+	<div id="content_5"><!--PS3-->
+		<h1>PlayStation 3 игры</h1>
+	   	<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+			<thead>
+				<tr>
+					<th><b>Название</b></th>
+					<th><b>Оценка</b></th>
+					<th><b>Статус</b></th>
+					<th><b>Пройдено раз</b></th>
+					<th class="nosort"><b>Дата прохождения</b></th>
+					<th class="nosort"><b>Комментарий</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Uncharted 3: Иллюзии Дрейка (2011)</td>
+					<td>9.1</td>
+					<td>Пройдено</td>
+					<td>1</td>
+					<td>14.05.20</td>
+					<td>Красивые локации, разнообразный геймплей, хороший сюжет, юмор. Высокий уровень детализации и проработки. В начале немного скучновато, но потом бодренько идёт.</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="sub-desc">* Пройдены через сервис Playstation Now или на эмуляторе RPCS3.</div>
+	</div>
+	
+	<div id="content_6"><!--PS4-->
+		<h1>PlayStation 4 игры</h1>
+	   	<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+			<thead>
+				<tr>
+					<th><b>Название</b></th>
+					<th><b>Оценка</b></th>
+					<th><b>Статус</b></th>
+					<th><b>Пройдено раз</b></th>
+					<th class="nosort"><b>Дата прохождения</b></th>
+					<th class="nosort"><b>Комментарий</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Spider-Man (2018)</td>
+					<td>8</td>
+					<td>Пройдено</td>
+					<td>1</td>
+					<td>08.05.20</td>
+					<td>Затянутая, не хватает плавного развития событий (по 2 босса почти подряд явный перебор), как в том же первом пауке. Побочные миссии и сбор предметов портят игру. Геймплей интересный, разнообразный, но боевка однообразная, но сделана неплохо. Город сделан потрясающе. Детские шутки и мистика тоже лишние.</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="sub-desc">* Пройдены через сервис Playstation Now.</div>
+	</div>
+	
+	<div id="content_7"><!--Sony Playstation 5-->
+		<h1>PlayStation 5 игры</h1>
+		<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+			<thead>
+				<tr>
+					<th><b>Название</b></th>
+					<th><b>Оценка</b></th>
+					<th><b>Пройдено раз</b></th>
+					<th class="nosort"><b>Дата прочтения</b></th>
+					<th class="nosort"><b>Комментарий</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Super Mario Odyssey (2017)</td>
+					<td>8</td>
+					<td>1</td>
+					<td>11.04.22</td>
+					<td>Много разных механик, некоторые миры интересные, некоторые не очень. Луны конечно искать надоедает.</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="sub-desc">* Пройдены на эмуляторе Yuzu.</div>
+	</div>
+	
+	<div id="content_8"><!--Книги-->
+		<h1>Книги</h1>
+		<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+			<thead>
+				<tr>
+					<th><b>Название</b></th>
+					<th><b>Оценка</b></th>
+					<th><b>Прочитано раз</b></th>
+					<th class="nosort"><b>Дата прочтения</b></th>
+					<th class="nosort"><b>Комментарий</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Дэвид Бернс - Терапия Настроения (1980)</td>
+					<td>7.5</td>
+					<td>1</td>
+					<td>19.03.23</td>
+					<td>На некоторые вещи можно взглянуть под другим углом, полезная книга.</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="sub-desc">* Прослушаны в формате аудиокниг.</div>
+	</div>
+
+	
+</div>
+<div style="color:#626366; padding-top:10px">Обновления сверху</div>
+</body>
+</html>
